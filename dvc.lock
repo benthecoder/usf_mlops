@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: data/cardio/cardio.csv
+      hash: md5
+      md5: 71c46a70f7ba9e3e4736ae73ecd5bac9
+      size: 2941524
+    - path: src/preprocessing.py
+      hash: md5
+      md5: 09fcdac2364264af7cf65a5aaf9046ff
+      size: 9438
+    outs:
+    - path: data/cardio/test_data.csv
+      hash: md5
+      md5: b914c49f6efec99da0eba688d9825fd7
+      size: 1038593
+    - path: data/cardio/test_data_selected.csv
+      hash: md5
+      md5: f99cf2c783a6ef21451af18c08d94c8d
+      size: 738361
+    - path: data/cardio/train_data.csv
+      hash: md5
+      md5: 41b42f369944db72d91fc4e1f407fb22
+      size: 3115673
+    - path: data/cardio/train_data_selected.csv
+      hash: md5
+      md5: b4acd4fd13a0bd319389fec2427f0eda
+      size: 2215239
+    - path: data/cardio/val_data.csv
+      hash: md5
+      md5: 17f8155c6ca07deb8511a123ea0f2c90
+      size: 1038485
+    - path: data/cardio/val_data_selected.csv
+      hash: md5
+      md5: bd0da8272feae9ab0867a8957538f209
+      size: 738288

@@ -1,0 +1,13 @@
+stages:
+  preprocess:
+    cmd: python src/preprocessing.py
+    deps:
+      - data/cardio/cardio.csv
+      - src/preprocessing.py
+    outs:
+      - data/cardio/train_data.csv
+      - data/cardio/val_data.csv
+      - data/cardio/test_data.csv
+      - data/cardio/train_data_selected.csv
+      - data/cardio/val_data_selected.csv
+      - data/cardio/test_data_selected.csv
